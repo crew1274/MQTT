@@ -1,14 +1,8 @@
-# Copyright (c) 2015 Nicolas JOUANIN
-#
-# See the file license.txt for copying permission.
 """
-hbmqtt_sub - MQTT 3.1.1 publisher
-
 Usage:
     hbmqtt_sub --version
     hbmqtt_sub (-h | --help)
     hbmqtt_sub --url BROKER_URL -t TOPIC... [-n COUNT] [-c CONFIG_FILE] [-i CLIENT_ID] [-q | --qos QOS] [-d] [-k KEEP_ALIVE] [--clean-session] [--ca-file CAFILE] [--ca-path CAPATH] [--ca-data CADATA] [ --will-topic WILL_TOPIC [--will-message WILL_MESSAGE] [--will-qos WILL_QOS] [--will-retain] ]
-
 Options:
     -h --help           Show this screen.
     --version           Show version.

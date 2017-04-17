@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 @asyncio.coroutine
 def test_coro():
     C = MQTTClient()
-    yield from C.connect('mqtt://test:test@140.116.39.225:1883')
+    yield from C.connect('mqtt://test:test@140.116.39.225:8883')
     tasks = [
         asyncio.ensure_future(C.publish('/test', b'1',qos=QOS_0)),
         asyncio.ensure_future(C.publish('/test', b'2', qos=QOS_1)),
@@ -23,7 +23,7 @@ def test_coro():
 def test_coro2():
     try:
         C = MQTTClient()
-        ret = yield from C.connect('mqtt://test:test@140.116.39.225:1883')
+        ret = yield from C.connect('mqtt://test:test@localhost:8883')
         message = yield from C.publish('/test/ncku', b'1', qos=0x00)
         message = yield from C.publish('/test/ncku', b'2', qos=0x01)
         message = yield from C.publish('/test/ncku', b'3', qos=0x02)

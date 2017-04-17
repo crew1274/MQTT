@@ -1,0 +1,12 @@
+listeners:
+  default:
+    type: tcp
+    bind: 0.0.0.0:8883
+    max-connections: 50000
+sys_interval: 10
+auth:
+  plugins:
+  - auth_file
+  - auth_anonymous
+  allow-anonymous: true
+  password-file: list

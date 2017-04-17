@@ -9,8 +9,8 @@ logger = logging.getLogger(__name__)
 @asyncio.coroutine
 def uptime_coro():
     C = MQTTClient()
-    yield from C.connect('mqtt://test:test@140.116.39.225:1883')
-    yield from C.subscribe([('/test', QOS_1),('/test/ncku', QOS_2)],)
+    yield from C.connect('mqtt://localhost:8883')
+    yield from C.subscribe([('/test', QOS_1),('/test', QOS_2),('/test')],)
     logger.info("Subscribed")
 
     try:
