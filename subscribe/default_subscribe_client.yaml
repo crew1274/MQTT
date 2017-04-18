@@ -5,3 +5,4 @@ default_retain: false
 auto_reconnect: false
 reconnect_max_interval: 10
 reconnect_retries: 2
+url: '140.116.39.225:1883'
