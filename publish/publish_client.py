@@ -55,6 +55,6 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG, format=formatter, filename='log_publish.txt')
 
     #執行test_coro(發布訊息)
-    asyncio.get_event_loop().run_until_complete(test('up'))
+    #asyncio.get_event_loop().run_until_complete(test('down'))
     #asyncio.get_event_loop().run_until_complete(test_coro())
-    #asyncio.get_event_loop().run_until_complete(test_coro2())
+    asyncio.get_event_loop().run_until_complete(test_coro2())

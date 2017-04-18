@@ -33,13 +33,11 @@ def uptime_coro():
 def command(topic,recv):
     print("exec")
     if(recv == b'down'):
-        os.system('cd ~/boot')
-        print("down")
-        os.system('php artisan down')
+        os.system('php ~/boot/artisan down')
+        print("web down")
     if(recv == bytearray(b'up')):
-        os.system('cd ~/boot')
-        print("up")
-        os.system('php artisan up')
+        os.system('php ~/boot/artisan up')
+        print(" web up")
 
 
 if __name__ == '__main__':

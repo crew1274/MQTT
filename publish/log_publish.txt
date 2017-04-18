@@ -504,3 +504,216 @@ Stopping 0 purec waiters
 Stopping 0 purel waiters
 waiting for tasks to be stopped
 closing writer
+Using selector: SelectSelector
+Using generated client ID : hbmqtt/]u^dViz1g3KHzGUs
+Loading plugins for namespace hbmqtt.client.plugins
+ Loading plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Initializing plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Plugin packet_logger_plugin ready
+Connect to: mqtt://140.116.39.225:1883
+hbmqtt/]u^dViz1g3KHzGUs -out-> ConnectPacket(ts=2017-04-18 16:16:04.461709, fixed=MQTTFixedHeader(length=35, flags=0x0), variable=ConnectVariableHeader(proto_name=MQTT, proto_level=4, flags=0x2, keepalive=9), payload=ConnectVariableHeader(client_id=hbmqtt/]u^dViz1g3KHzGUs, will_topic=None, will_message=None, username=None, password=None))
+hbmqtt/]u^dViz1g3KHzGUs <-in-- ConnackPacket(ts=2017-04-18 16:16:04.520887, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=ConnackVariableHeader(session_parent=0x0, return_code=0x0), payload=None)
+hbmqtt/]u^dViz1g3KHzGUs Starting reader coro
+Handler tasks started
+Begin messages delivery retries
+End messages delivery retries
+Handler ready
+connected to 140.116.39.225:1883
+messages up published
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+hbmqtt/]u^dViz1g3KHzGUs -out-> PublishPacket(ts=2017-04-18 16:16:04.522916, fixed=MQTTFixedHeader(length=8, flags=0x0), variable=PublishVariableHeader(topic=test, packet_id=None), payload=PublishPayload(data="b'up'"))
+hbmqtt/]u^dViz1g3KHzGUs -out-> DisconnectPacket(ts=2017-04-18 16:16:04.523417, fixed=MQTTFixedHeader(length=0, flags=0x0), variable=None, payload=None)
+Task cancelled, reader loop ending
+Broker closed connection
+hbmqtt/]u^dViz1g3KHzGUs Reader coro stopped
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+closing writer
+Using selector: SelectSelector
+Using generated client ID : hbmqtt/duLX;LHl?8MD;hWS
+Loading plugins for namespace hbmqtt.client.plugins
+ Loading plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Initializing plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Plugin packet_logger_plugin ready
+Connect to: mqtt://140.116.39.225:1883
+hbmqtt/duLX;LHl?8MD;hWS -out-> ConnectPacket(ts=2017-04-18 16:16:27.837093, fixed=MQTTFixedHeader(length=35, flags=0x0), variable=ConnectVariableHeader(proto_name=MQTT, proto_level=4, flags=0x2, keepalive=9), payload=ConnectVariableHeader(client_id=hbmqtt/duLX;LHl?8MD;hWS, will_topic=None, will_message=None, username=None, password=None))
+hbmqtt/duLX;LHl?8MD;hWS <-in-- ConnackPacket(ts=2017-04-18 16:16:27.896327, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=ConnackVariableHeader(session_parent=0x0, return_code=0x0), payload=None)
+hbmqtt/duLX;LHl?8MD;hWS Starting reader coro
+Handler tasks started
+Begin messages delivery retries
+End messages delivery retries
+Handler ready
+connected to 140.116.39.225:1883
+messages down published
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+hbmqtt/duLX;LHl?8MD;hWS -out-> PublishPacket(ts=2017-04-18 16:16:27.899341, fixed=MQTTFixedHeader(length=10, flags=0x0), variable=PublishVariableHeader(topic=test, packet_id=None), payload=PublishPayload(data="b'down'"))
+hbmqtt/duLX;LHl?8MD;hWS -out-> DisconnectPacket(ts=2017-04-18 16:16:27.899863, fixed=MQTTFixedHeader(length=0, flags=0x0), variable=None, payload=None)
+Task cancelled, reader loop ending
+Broker closed connection
+hbmqtt/duLX;LHl?8MD;hWS Reader coro stopped
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+closing writer
+Using selector: SelectSelector
+Using generated client ID : hbmqtt/03:PQbzcZlK6KQe7
+Loading plugins for namespace hbmqtt.client.plugins
+ Loading plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Initializing plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Plugin packet_logger_plugin ready
+Connect to: mqtt://140.116.39.225:1883
+hbmqtt/03:PQbzcZlK6KQe7 -out-> ConnectPacket(ts=2017-04-18 16:17:13.216431, fixed=MQTTFixedHeader(length=35, flags=0x0), variable=ConnectVariableHeader(proto_name=MQTT, proto_level=4, flags=0x2, keepalive=9), payload=ConnectVariableHeader(client_id=hbmqtt/03:PQbzcZlK6KQe7, will_topic=None, will_message=None, username=None, password=None))
+hbmqtt/03:PQbzcZlK6KQe7 <-in-- ConnackPacket(ts=2017-04-18 16:17:13.289865, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=ConnackVariableHeader(session_parent=0x0, return_code=0x0), payload=None)
+hbmqtt/03:PQbzcZlK6KQe7 Starting reader coro
+Handler tasks started
+Begin messages delivery retries
+End messages delivery retries
+Handler ready
+connected to 140.116.39.225:1883
+messages down published
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+hbmqtt/03:PQbzcZlK6KQe7 -out-> PublishPacket(ts=2017-04-18 16:17:13.292865, fixed=MQTTFixedHeader(length=10, flags=0x0), variable=PublishVariableHeader(topic=test, packet_id=None), payload=PublishPayload(data="b'down'"))
+hbmqtt/03:PQbzcZlK6KQe7 -out-> DisconnectPacket(ts=2017-04-18 16:17:13.293365, fixed=MQTTFixedHeader(length=0, flags=0x0), variable=None, payload=None)
+Task cancelled, reader loop ending
+Broker closed connection
+hbmqtt/03:PQbzcZlK6KQe7 Reader coro stopped
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+closing writer
+Using selector: SelectSelector
+Using generated client ID : hbmqtt/QkhILjk[R`xq4U]g
+Loading plugins for namespace hbmqtt.client.plugins
+ Loading plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Initializing plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Plugin packet_logger_plugin ready
+Connect to: mqtt://140.116.39.225:1883
+hbmqtt/QkhILjk[R`xq4U]g -out-> ConnectPacket(ts=2017-04-18 16:17:45.400155, fixed=MQTTFixedHeader(length=35, flags=0x0), variable=ConnectVariableHeader(proto_name=MQTT, proto_level=4, flags=0x2, keepalive=9), payload=ConnectVariableHeader(client_id=hbmqtt/QkhILjk[R`xq4U]g, will_topic=None, will_message=None, username=None, password=None))
+hbmqtt/QkhILjk[R`xq4U]g <-in-- ConnackPacket(ts=2017-04-18 16:17:45.462273, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=ConnackVariableHeader(session_parent=0x0, return_code=0x0), payload=None)
+hbmqtt/QkhILjk[R`xq4U]g Starting reader coro
+Handler tasks started
+Begin messages delivery retries
+End messages delivery retries
+Handler ready
+connected to 140.116.39.225:1883
+Watch broker disconnection
+hbmqtt/QkhILjk[R`xq4U]g -out-> PublishPacket(ts=2017-04-18 16:17:45.466270, fixed=MQTTFixedHeader(length=9, flags=0x0), variable=PublishVariableHeader(topic=/test, packet_id=None), payload=PublishPayload(data="b'up'"))
+hbmqtt/QkhILjk[R`xq4U]g -out-> PublishPacket(ts=2017-04-18 16:17:45.466769, fixed=MQTTFixedHeader(length=10, flags=0x2), variable=PublishVariableHeader(topic=/test, packet_id=1), payload=PublishPayload(data="b'2'"))
+hbmqtt/QkhILjk[R`xq4U]g -out-> PublishPacket(ts=2017-04-18 16:17:45.466769, fixed=MQTTFixedHeader(length=10, flags=0x4), variable=PublishVariableHeader(topic=/test, packet_id=2), payload=PublishPayload(data="b'3'"))
+hbmqtt/QkhILjk[R`xq4U]g <-in-- PubackPacket(ts=2017-04-18 16:17:45.874240, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=1), payload=None)
+hbmqtt/QkhILjk[R`xq4U]g <-in-- PubrecPacket(ts=2017-04-18 16:17:45.975374, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+hbmqtt/QkhILjk[R`xq4U]g -out-> PubrelPacket(ts=2017-04-18 16:17:45.976372, fixed=MQTTFixedHeader(length=2, flags=0x2), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+hbmqtt/QkhILjk[R`xq4U]g <-in-- PubcompPacket(ts=2017-04-18 16:17:46.038796, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+messages published
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+hbmqtt/QkhILjk[R`xq4U]g -out-> DisconnectPacket(ts=2017-04-18 16:17:46.039819, fixed=MQTTFixedHeader(length=0, flags=0x0), variable=None, payload=None)
+Task cancelled, reader loop ending
+Broker closed connection
+hbmqtt/QkhILjk[R`xq4U]g Reader coro stopped
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+closing writer
+Using selector: SelectSelector
+Using generated client ID : hbmqtt/;Da7Ii_2<uXiYq1^
+Loading plugins for namespace hbmqtt.client.plugins
+ Loading plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Initializing plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Plugin packet_logger_plugin ready
+Connect to: mqtt://140.116.39.225:1883
+hbmqtt/;Da7Ii_2<uXiYq1^ -out-> ConnectPacket(ts=2017-04-18 16:19:08.744665, fixed=MQTTFixedHeader(length=35, flags=0x0), variable=ConnectVariableHeader(proto_name=MQTT, proto_level=4, flags=0x2, keepalive=9), payload=ConnectVariableHeader(client_id=hbmqtt/;Da7Ii_2<uXiYq1^, will_topic=None, will_message=None, username=None, password=None))
+hbmqtt/;Da7Ii_2<uXiYq1^ <-in-- ConnackPacket(ts=2017-04-18 16:19:08.809038, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=ConnackVariableHeader(session_parent=0x0, return_code=0x0), payload=None)
+hbmqtt/;Da7Ii_2<uXiYq1^ Starting reader coro
+Handler tasks started
+Begin messages delivery retries
+End messages delivery retries
+Handler ready
+connected to 140.116.39.225:1883
+Watch broker disconnection
+hbmqtt/;Da7Ii_2<uXiYq1^ -out-> PublishPacket(ts=2017-04-18 16:19:08.812042, fixed=MQTTFixedHeader(length=9, flags=0x0), variable=PublishVariableHeader(topic=/test, packet_id=None), payload=PublishPayload(data="b'up'"))
+hbmqtt/;Da7Ii_2<uXiYq1^ -out-> PublishPacket(ts=2017-04-18 16:19:08.812042, fixed=MQTTFixedHeader(length=10, flags=0x2), variable=PublishVariableHeader(topic=/test, packet_id=1), payload=PublishPayload(data="b'2'"))
+hbmqtt/;Da7Ii_2<uXiYq1^ <-in-- PubackPacket(ts=2017-04-18 16:19:08.872143, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=1), payload=None)
+hbmqtt/;Da7Ii_2<uXiYq1^ -out-> PublishPacket(ts=2017-04-18 16:19:08.873634, fixed=MQTTFixedHeader(length=10, flags=0x4), variable=PublishVariableHeader(topic=/test, packet_id=2), payload=PublishPayload(data="b'3'"))
+hbmqtt/;Da7Ii_2<uXiYq1^ <-in-- PubrecPacket(ts=2017-04-18 16:19:08.933579, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+hbmqtt/;Da7Ii_2<uXiYq1^ -out-> PubrelPacket(ts=2017-04-18 16:19:08.936052, fixed=MQTTFixedHeader(length=2, flags=0x2), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+hbmqtt/;Da7Ii_2<uXiYq1^ <-in-- PubcompPacket(ts=2017-04-18 16:19:08.998612, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+messages published
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+hbmqtt/;Da7Ii_2<uXiYq1^ -out-> DisconnectPacket(ts=2017-04-18 16:19:08.999113, fixed=MQTTFixedHeader(length=0, flags=0x0), variable=None, payload=None)
+Task cancelled, reader loop ending
+Broker closed connection
+hbmqtt/;Da7Ii_2<uXiYq1^ Reader coro stopped
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+closing writer
+Using selector: SelectSelector
+Using generated client ID : hbmqtt/q<NU=[LOUi=kwWVa
+Loading plugins for namespace hbmqtt.client.plugins
+ Loading plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Initializing plugin packet_logger_plugin = hbmqtt.plugins.logging:PacketLoggerPlugin
+ Plugin packet_logger_plugin ready
+Connect to: mqtt://140.116.39.225:1883
+hbmqtt/q<NU=[LOUi=kwWVa -out-> ConnectPacket(ts=2017-04-18 16:25:07.883885, fixed=MQTTFixedHeader(length=35, flags=0x0), variable=ConnectVariableHeader(proto_name=MQTT, proto_level=4, flags=0x2, keepalive=9), payload=ConnectVariableHeader(client_id=hbmqtt/q<NU=[LOUi=kwWVa, will_topic=None, will_message=None, username=None, password=None))
+hbmqtt/q<NU=[LOUi=kwWVa <-in-- ConnackPacket(ts=2017-04-18 16:25:07.945105, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=ConnackVariableHeader(session_parent=0x0, return_code=0x0), payload=None)
+hbmqtt/q<NU=[LOUi=kwWVa Starting reader coro
+Handler tasks started
+Begin messages delivery retries
+End messages delivery retries
+Handler ready
+connected to 140.116.39.225:1883
+Watch broker disconnection
+hbmqtt/q<NU=[LOUi=kwWVa -out-> PublishPacket(ts=2017-04-18 16:25:07.947106, fixed=MQTTFixedHeader(length=9, flags=0x0), variable=PublishVariableHeader(topic=/test, packet_id=None), payload=PublishPayload(data="b'up'"))
+hbmqtt/q<NU=[LOUi=kwWVa -out-> PublishPacket(ts=2017-04-18 16:25:07.947607, fixed=MQTTFixedHeader(length=10, flags=0x2), variable=PublishVariableHeader(topic=/test, packet_id=1), payload=PublishPayload(data="b'2'"))
+hbmqtt/q<NU=[LOUi=kwWVa <-in-- PubackPacket(ts=2017-04-18 16:25:08.008297, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=1), payload=None)
+hbmqtt/q<NU=[LOUi=kwWVa -out-> PublishPacket(ts=2017-04-18 16:25:08.009332, fixed=MQTTFixedHeader(length=10, flags=0x4), variable=PublishVariableHeader(topic=/test, packet_id=2), payload=PublishPayload(data="b'3'"))
+hbmqtt/q<NU=[LOUi=kwWVa <-in-- PubrecPacket(ts=2017-04-18 16:25:08.072076, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+hbmqtt/q<NU=[LOUi=kwWVa -out-> PubrelPacket(ts=2017-04-18 16:25:08.072577, fixed=MQTTFixedHeader(length=2, flags=0x2), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+hbmqtt/q<NU=[LOUi=kwWVa <-in-- PubcompPacket(ts=2017-04-18 16:25:08.133669, fixed=MQTTFixedHeader(length=2, flags=0x0), variable=PacketIdVariableHeader(packet_id=2), payload=None)
+messages published
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+hbmqtt/q<NU=[LOUi=kwWVa -out-> DisconnectPacket(ts=2017-04-18 16:25:08.134184, fixed=MQTTFixedHeader(length=0, flags=0x0), variable=None, payload=None)
+Task cancelled, reader loop ending
+Broker closed connection
+hbmqtt/q<NU=[LOUi=kwWVa Reader coro stopped
+Stopping 0 puback waiters
+Stopping 0 pucomp waiters
+Stopping 0 purec waiters
+Stopping 0 purel waiters
+waiting for tasks to be stopped
+closing writer
