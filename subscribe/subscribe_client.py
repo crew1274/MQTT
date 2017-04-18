@@ -43,6 +43,6 @@ def command(topic,recv):
 if __name__ == '__main__':
     formatter = "[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s"
     logging.basicConfig(level=logging.INFO, format=formatter)
-    logging.basicConfig(level=logging.DEBUG, format=formatter, filename='log-sub.txt')
+    logging.basicConfig(level=logging.DEBUG, format=formatter, filename='log_sub.txt')
     #執行
     asyncio.get_event_loop().run_until_complete(uptime_coro())
