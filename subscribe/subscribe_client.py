@@ -34,7 +34,7 @@ def uptime_coro():
 def command(topic,recv):
     #print("exec")
     if(recv == bytearray(b'down')):
-        os.system('php %s artisan down'%(dist))
+        os.system('php %sartisan down'%(dist))
         print("web down")
     if(recv == bytearray(b'up')):
         os.system('php /home/fa/boot/artisan up')
