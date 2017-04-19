@@ -8,6 +8,7 @@ logger = logging.getLogger(__name__)
 
 url = 'mqtt://140.116.39.225:1883'
 topic = '/test'
+dist = '/home/fa/boot/'
 
 @asyncio.coroutine
 def uptime_coro():
@@ -31,12 +32,12 @@ def uptime_coro():
         logger.error("Client exception: %s" % ce)
 
 def command(topic,recv):
-    print("exec")
-    if(recv == b'down'):
-        os.system('php ~/boot/artisan down')
+    #print("exec")
+    if(recv == bytearray(b'down')):
+        os.system('php %s artisan down'%(dist))
         print("web down")
     if(recv == bytearray(b'up')):
-        os.system('php ~/boot/artisan up')
+        os.system('php /home/fa/boot/artisan up')
         print(" web up")
 
 

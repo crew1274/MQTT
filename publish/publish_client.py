@@ -39,6 +39,6 @@ if __name__ == '__main__':
     #定義log輸出模式
     formatter = "[%(asctime)s] %(name)s {%(filename)s:%(lineno)d} %(levelname)s - %(message)s"
     formatter = "%(message)s"
-    #執行test_coro(發布訊息)
-    asyncio.get_event_loop().run_until_complete(test('up'))
+    #發布訊息
+    asyncio.get_event_loop().run_until_complete(test('down'))
     #asyncio.get_event_loop().run_until_complete(test_coro())
