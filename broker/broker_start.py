@@ -9,12 +9,12 @@ config = {
     'listeners': {
         'default': {
             'type': 'tcp',
-            'bind': '0.0.0.0:8883',
+            'bind': '0.0.0.0:1883',
             'max-connections': 50000,
         },
         'ws-mqtt': {
             'type': 'ws',
-            'bind': '0.0.0.0:8884',
+            'bind': '0.0.0.0:1884',
             'max-connections': 50000,
         },
     },
