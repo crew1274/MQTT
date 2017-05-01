@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 url = 'mqtt://140.116.39.225:1883'
 topic = '/test'
-dist = '/home/fa/boot/'
+dist = '/home/fa/web'
 
 @asyncio.coroutine
 def uptime_coro():
@@ -34,10 +34,10 @@ def uptime_coro():
 def command(topic,recv):
     #print("exec")
     if(recv == bytearray(b'down')):
-        os.system('php %sartisan down'%(dist))
+        os.system('php %s/artisan down'%(dist))
         print("web down")
     if(recv == bytearray(b'up')):
-        os.system('php /home/fa/boot/artisan up')
+        os.system('php %s/artisan up'%(dist))
         print(" web up")
 
 
