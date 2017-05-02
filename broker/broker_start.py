@@ -1,10 +1,9 @@
 import logging
 import asyncio
 import os
+from hbmqtt.utils import read_yaml_config
 from hbmqtt.broker import Broker
-
 logger = logging.getLogger(__name__)
-
 config = {
     'listeners': {
         'default': {
@@ -12,7 +11,7 @@ config = {
             'bind': '0.0.0.0:1883',
             'max-connections': 50000,
         },
-        'ws-mqtt': {
+        'websocket': {
             'type': 'ws',
             'bind': '0.0.0.0:1884',
             'max-connections': 50000,
@@ -25,23 +24,15 @@ config = {
         'plugins': ['auth_file', 'auth_anonymous']
     }
 }
-
+config = read_yaml_config(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.yaml'))
+logger.debug("Using default configuration")
 broker = Broker(config)
-
 @asyncio.coroutine
-def test_coro():
+def coro():
     yield from broker.start()
-    #yield from asyncio.sleep(5)
-    #yield from broker.shutdown()
-
-
 if __name__ == '__main__':
     #定義log輸出模式
     formatter = "[%(asctime)s] :: %(levelname)s :: %(name)s :: %(message)s"
-    #formatter = "%(asctime)s :: %(levelname)s :: %(message)s"
     logging.basicConfig(level=logging.INFO, format=formatter)
-    #紀錄log
-    logging.basicConfig(level=logging.DEBUG, format=formatter, filename='log-broker.txt')
-
-    asyncio.get_event_loop().run_until_complete(test_coro())
+    asyncio.get_event_loop().run_until_complete(coro())
     asyncio.get_event_loop().run_forever()
