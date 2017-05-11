@@ -25,10 +25,26 @@ class EchoServer(TCPServer):
             except Exception as e:
                 print(e)
 
+class VersionServer(TCPServer):
+    @gen.coroutine
+    def handle_stream(self, stream, address):
+        while True:
+            try:
+                data = yield stream.read_until(b"\n")
+                logger.info("Received bytes: %s", data)
+                if not data.endswith(b"\n"):
+                    data = data + b"\n"
+                yield stream.write(b"1.0.2\n")
+            except StreamClosedError:
+                logger.warning("Lost client at host %s", address[0])
+                break
+            except Exception as e:
+                print(e)
+
 
 if __name__ == "__main__":
     options.parse_command_line()
-    server = EchoServer()
+    server = VersionServer()
     server.listen(options.port)
     logger.info("Listening on TCP port %d", options.port)
     IOLoop.current().start()

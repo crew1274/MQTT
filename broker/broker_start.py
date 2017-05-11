@@ -24,7 +24,7 @@ config = {
         'plugins': ['auth_file', 'auth_anonymous']
     }
 }
-config = read_yaml_config(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.yaml'))
+#config = read_yaml_config(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.yaml'))
 logger.debug("Using default configuration")
 broker = Broker(config)
 @asyncio.coroutine
